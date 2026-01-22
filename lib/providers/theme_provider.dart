@@ -20,7 +20,7 @@ class ThemeNotifier extends StateNotifier<ThemeMode> {
 
   bool get isDarkMode => state == ThemeMode.dark;
 }
-
+//adwa
 // Light Theme
 final lightTheme = ThemeData(
   useMaterial3: true,

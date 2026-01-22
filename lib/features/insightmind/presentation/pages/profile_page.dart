@@ -7,10 +7,10 @@ import '../../../../providers/theme_provider.dart';
 import 'login_page.dart';
 import 'register_page.dart';
 import 'history_page.dart' as history_page;
-
+//fsefeadawd
 // Provider untuk navigasi ke History
 final navigationIndexProvider = StateProvider<int>((ref) => 0);
-
+//adwwad
 class ProfilePage extends ConsumerWidget {
   const ProfilePage({super.key});
 
