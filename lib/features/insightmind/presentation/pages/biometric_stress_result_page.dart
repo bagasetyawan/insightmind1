@@ -6,7 +6,7 @@ import 'package:insightmind_app/core/biometric/stress_analysis_service.dart';
 import 'package:insightmind_app/core/biometric/stress_api_service.dart'
     show BiometricStressLevel;
 import 'package:insightmind_app/providers/screening_history_provider.dart';
-
+//dwada
 /// Halaman hasil deteksi stres berbasis biometrik (scan wajah).
 class BiometricStressResultPage extends ConsumerStatefulWidget {
   /// File gambar wajah yang di-capture saat scan (opsional)
