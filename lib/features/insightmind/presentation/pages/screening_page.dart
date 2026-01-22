@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../domain/entities/question.dart';
 import 'result_page.dart';
 import 'history_page.dart';
-
+//jhgjjgjgj
 class ScreeningPage extends ConsumerStatefulWidget {
   const ScreeningPage({super.key});
 
@@ -346,7 +346,7 @@ class _ScreeningPageState extends ConsumerState<ScreeningPage> {
 
                 if (_currentPage > 0) const SizedBox(width: 12),
 
-                // Next/Submit Button
+                // Next/Submit Buttonuvjguvvhghhjvjhvggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
                 Expanded(
                   flex: _currentPage > 0 ? 1 : 1,
                   child: ElevatedButton.icon(
@@ -360,7 +360,7 @@ class _ScreeningPageState extends ConsumerState<ScreeningPage> {
                                 // Konversi dari 0-27 (9 questions × 3 max) ke 0-100
                                 final normalizedScore = ((totalScore / 27) * 100).toInt();
                                 
-                                // Simpan ke history
+                                // Simpan ke historyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
                                 final history = ref.read(screeningHistoryProvider);
                                 String level;
                                 if (normalizedScore < 35) {

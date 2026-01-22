@@ -1,5 +1,5 @@
 import '../entities/mental_result.dart';
-
+/////////
 class CalculateRiskLevel {
   MentalResult execute(int score) {
     String risk;

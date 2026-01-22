@@ -5,7 +5,7 @@ import 'detailed_stats_page.dart';
 import 'pdf_preview_page.dart';
 import '../../../../providers/screening_history_provider.dart' as global_history;
 
-// Provider untuk menyimpan history screening (tanpa data dummy, diisi saat user melakukan screening)
+///////////// Provider untuk menyimpan history screening (tanpa data dummy, diisi saat user melakukan screening)/////////
 final screeningHistoryProvider = StateProvider<List<ScreeningRecord>>((ref) => []);
 
 class ScreeningRecord {
@@ -46,10 +46,10 @@ class HistoryPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Sinkronkan dengan riwayat global yang disimpan di Firestore
+    // Sinkronkan dengan riwayat global yang disimpan di Firestore///////
     final globalState = ref.watch(global_history.screeningHistoryProvider);
     
-    // Selalu sinkronkan data dari global provider ke local provider
+    // Selalu sinkronkan data dari global provider ke local provider/////
     final mapped = globalState.historyList
         .map(
           (h) => ScreeningRecord(
@@ -136,7 +136,7 @@ class HistoryPage extends ConsumerWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
 
-                    // Filter Period Selector
+                    ///////////////////// Filter Period Selector/////////////////////
                     Row(
                       children: [
                         Expanded(
@@ -150,7 +150,7 @@ class HistoryPage extends ConsumerWidget {
                     ),
                     const SizedBox(height: 16),
 
-                    // Button ke Statistik Detail
+                    ///////////////////////// Button ke Statistik Detail///////////////////////////////////
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
@@ -199,7 +199,7 @@ class HistoryPage extends ConsumerWidget {
                     ),
                     const SizedBox(height: 24),
 
-                    // Statistics Overview
+                    //////////////////////////// Statistics Overview//////////////////////////////
                     Text(
                       'Ringkasan ${selectedPeriod == 'Mingguan' ? '7 Hari' : '30 Hari'} Terakhir',
                       style: GoogleFonts.poppins(
@@ -214,7 +214,7 @@ class HistoryPage extends ConsumerWidget {
 
                     const SizedBox(height: 32),
 
-                    // Score Trend Chart
+                    // //////////////////////////////////////Score Trend Chart////////////////////////////
                     Text(
                       'Grafik Perkembangan Skor',
                       style: GoogleFonts.poppins(
@@ -229,11 +229,11 @@ class HistoryPage extends ConsumerWidget {
 
                     const SizedBox(height: 32),
 
-                    // Download PDF Button
+                    // //////////////////////////////////////////////////////Download PDF Button///////////////////////////////////
                     if (history.isNotEmpty)
                       GestureDetector(
                         onTap: () {
-                          // Convert ScreeningRecord ke ScreeningRecordPDF
+                          /////////////////////////////////////// Convert ScreeningRecord ke ScreeningRecordPDF//////////////////////////////////////////
                           final pdfRecords = history
                               .map((r) => ScreeningRecordPDF(
                                     date: r.date,
@@ -297,7 +297,7 @@ class HistoryPage extends ConsumerWidget {
                       ),
                     const SizedBox(height: 32),
 
-                    // History List
+                    /////////////////////////////////////////////////////////////////// History List//////////////////////////////////////////////////////////////////////
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
