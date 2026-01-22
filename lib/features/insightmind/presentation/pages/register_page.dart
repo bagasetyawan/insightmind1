@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../providers/auth_provider.dart';
 import 'login_page.dart';
-
+//a
 class RegisterPage extends ConsumerStatefulWidget {
   final String? initialEmail;
 

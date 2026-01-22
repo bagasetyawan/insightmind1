@@ -5,7 +5,7 @@ import '../../../../providers/auth_provider.dart';
 import '../../../../providers/screening_history_provider.dart' as global_history;
 import 'register_page.dart';
 import 'home_page.dart';
-
+//a
 class LoginPage extends ConsumerStatefulWidget {
   final String? initialEmail;
 
