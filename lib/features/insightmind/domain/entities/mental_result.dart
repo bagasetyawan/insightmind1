@@ -4,3 +4,5 @@ class MentalResult {
 
   const MentalResult({required this.score, required this.riskLevel});
 }
+
+//a
