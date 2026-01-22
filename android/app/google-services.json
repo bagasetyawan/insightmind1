@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "886346200158",
+    "project_id": "insightmind-c4d4f",
+    "storage_bucket": "insightmind-c4d4f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886346200158:android:ea7b56029085f7d98ab0cf",
+        "android_client_info": {
+          "package_name": "com.bagas.insightmind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886346200158-2a77mrqcqs639bajv92eel7abdu6ea2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm1JlmE64JwKs-bf_ON2L7P-rihv5JKdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886346200158-2a77mrqcqs639bajv92eel7abdu6ea2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
