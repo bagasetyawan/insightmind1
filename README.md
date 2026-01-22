@@ -228,3 +228,96 @@ Jika ada pertanyaan atau issue, silakan hubungi tim development.
 
 **Dibuat dengan ❤️ untuk Kesehatan Mental yang Lebih Baik**
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Gambaran Umum Aplikasi
+
+InsightMind adalah aplikasi berbasis Flutter yang berfungsi untuk:
+
+Analisis tingkat stres
+
+Monitoring kondisi mental
+
+Menampilkan hasil biometrik
+
+Statistik detail pengguna
+
+Visualisasi data mental health
+
+
+
+. Konsep Arsitektur yang Digunakan
+
+Project ini menerapkan:
+
+✅ Modular Feature Structure
+
+Setiap fitur dipisah dalam folder sendiri agar:
+
+Mudah dikembangkan
+
+Mudah maintenance
+
+Tidak campur aduk
+
+✅ Stateful / Stateless Widget (Flutter)
+
+Setiap page adalah widget yang:
+
+Mengatur UI
+
+Mengelola state
+
+Menampilkan data hasil analisis
+
+📊 3. Penjelasan Contoh File
+📌 detailed_stats_page.dart
+
+Fungsi:
+
+Menampilkan statistik detail hasil analisis stres
+
+Biasanya berisi grafik, skor, dan interpretasi hasil
+
+Konsep yang digunakan:
+
+Widget layout (Column, Row, Container)
+
+Styling UI
+
+Possibly data parsing / parameter passing
+
+📌 biometric_stress_result_page.dart
+
+Fungsi:
+
+Menampilkan hasil analisis biometrik stres
+
+Menginterpretasikan nilai menjadi kategori (Rendah, Sedang, Tinggi)
+
+Biasanya terdapat:
+
+Logika pengkategorian skor
+
+UI hasil akhir
+
+Navigasi antar halaman
+
