@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../domain/entities/question.dart';
 import 'result_page.dart';
 import 'history_page.dart';
-//jhgjjgjgj
+//CLAS CONTAINER//
 class ScreeningPage extends ConsumerStatefulWidget {
   const ScreeningPage({super.key});
 
@@ -128,7 +128,7 @@ class _ScreeningPageState extends ConsumerState<ScreeningPage> {
             ),
           ),
 
-          // Questions PageView
+          // Questions PageView HAHAYYYY///
           Expanded(
             child: PageView.builder(
               controller: _pageController,
@@ -360,7 +360,7 @@ class _ScreeningPageState extends ConsumerState<ScreeningPage> {
                                 // Konversi dari 0-27 (9 questions × 3 max) ke 0-100
                                 final normalizedScore = ((totalScore / 27) * 100).toInt();
                                 
-                                // Simpan ke historyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                                // Simpan ke historyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
                                 final history = ref.read(screeningHistoryProvider);
                                 String level;
                                 if (normalizedScore < 35) {
@@ -378,7 +378,7 @@ class _ScreeningPageState extends ConsumerState<ScreeningPage> {
                                 );
 
                                 // Simpan dengan urutan terbaru di depan,
-                                // agar konsisten dengan provider global & History.
+                                // agar konsisten dengan provider global & History.HISTORYYYY///
                                 ref.read(screeningHistoryProvider.notifier).state = [
                                   newRecord,
                                   ...history,
