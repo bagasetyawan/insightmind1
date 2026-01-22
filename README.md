@@ -1892,4 +1892,1083 @@ Atau versi yang lebih “wah” untuk portfolio
 Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
 
 
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+v
+
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?'
+
+
+
+Deskripsi Project – InsightMind
+
+InsightMind merupakan aplikasi berbasis Flutter yang dirancang untuk membantu pengguna dalam melakukan analisis dan monitoring tingkat stres secara digital. Aplikasi ini mengintegrasikan konsep self-assessment dan visualisasi data untuk memberikan gambaran kondisi mental pengguna secara informatif dan terstruktur.
+
+Pengembangan aplikasi ini menggunakan pendekatan modular berbasis feature, sehingga setiap bagian sistem dipisahkan sesuai tanggung jawabnya. Struktur folder yang digunakan bertujuan untuk meningkatkan keterbacaan kode, kemudahan pengembangan lanjutan, serta pemeliharaan sistem dalam jangka panjang.
+
+🏗 Konsep dan Struktur Pengembangan
+
+Project ini menerapkan prinsip pemrograman terstruktur dan modular dengan pembagian direktori berdasarkan fitur. Pada folder:
+
+lib/features/insightmind/presentation/pages/
+
+
+terdapat berbagai halaman utama aplikasi yang berfungsi sebagai antarmuka pengguna.
+
+Setiap halaman dikembangkan menggunakan widget Flutter, baik StatelessWidget maupun StatefulWidget, sesuai kebutuhan pengelolaan state dan logika tampilan.
+
+Pendekatan ini memungkinkan:
+
+Pemisahan logika dan tampilan
+
+Pengelolaan kode yang lebih rapi
+
+Skalabilitas aplikasi untuk pengembangan lebih lanjut
+
+📊 Penjelasan Fitur Utama
+1. Detailed Stats Page
+
+Halaman ini berfungsi untuk menampilkan statistik detail hasil analisis stres pengguna. Informasi yang disajikan meliputi:
+
+Skor tingkat stres
+
+Interpretasi hasil
+
+Visualisasi data dalam bentuk grafik atau indikator
+
+Ringkasan kondisi pengguna
+
+Halaman ini dirancang untuk memberikan pemahaman yang lebih mendalam mengenai kondisi psikologis pengguna berdasarkan data yang telah dihitung sebelumnya.
+
+2. Biometric Stress Result Page
+
+Halaman ini menampilkan hasil akhir dari proses analisis biometrik stres. Sistem mengolah data input dan mengkategorikan tingkat stres ke dalam beberapa level, seperti:
+
+Rendah
+
+Sedang
+
+Tinggi
+
+Setiap kategori disertai dengan penjelasan interpretatif agar pengguna tidak hanya melihat angka, tetapi juga memahami makna dari hasil tersebut.
+
+🚀 Cara Menjalankan Aplikasi
+
+Untuk menjalankan project InsightMind, langkah-langkah yang dilakukan adalah sebagai berikut:
+
+Pastikan Flutter SDK telah terinstal pada perangkat.
+
+Masuk ke direktori project.
+
+Jalankan perintah flutter pub get untuk mengunduh dependency.
+
+Jalankan aplikasi menggunakan perintah flutter run.
+
+Aplikasi dapat dijalankan melalui emulator Android, iOS, maupun perangkat fisik yang telah terhubung.
+
+💡 Tujuan Pengembangan
+
+Pengembangan InsightMind bertujuan untuk:
+
+Memberikan alat bantu monitoring stres secara digital
+
+Mengimplementasikan konsep pemrograman Flutter berbasis modular
+
+Melatih penerapan struktur folder yang terorganisir
+
+Mengembangkan kemampuan dalam pembuatan UI interaktif
+
+📈 Kontribusi dan Pengembangan Berkelanjutan
+
+Project ini dikembangkan secara bertahap melalui proses commit berkala di GitHub. Setiap pembaruan mencerminkan proses pengembangan yang berkelanjutan, mulai dari perbaikan antarmuka, optimalisasi logika program, hingga penyempurnaan struktur kode.
+
+Pendekatan incremental development digunakan untuk memastikan setiap perubahan terdokumentasi dengan baik dan mudah ditelusuri dalam riwayat versi.
+
+Kalau kamu mau, aku bisa buatkan versi:
+
+Lebih panjang untuk laporan 5–10 halaman
+
+Versi formal akademik untuk tugas kampus
+
+Versi README GitHub yang profesional
+
+Atau versi yang lebih “wah” untuk portfolio
+
+Kamu mau dipakai buat apa? Presentasi, laporan, atau GitHub portfolio?
+
+
+
+
+
 
