@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 final themeProvider = StateNotifierProvider<ThemeNotifier, ThemeMode>((ref) {
   return ThemeNotifier();
 });
-//a
+
 class ThemeNotifier extends StateNotifier<ThemeMode> {
   ThemeNotifier() : super(ThemeMode.light);
 
@@ -20,7 +20,7 @@ class ThemeNotifier extends StateNotifier<ThemeMode> {
 
   bool get isDarkMode => state == ThemeMode.dark;
 }
-//adwa
+
 // Light Theme
 final lightTheme = ThemeData(
   useMaterial3: true,

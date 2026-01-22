@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../providers/auth_provider.dart';
+import '../../../../providers/screening_history_provider.dart' as global_history;
 import 'login_page.dart';
-//a
+import 'home_page.dart';
+
 class RegisterPage extends ConsumerStatefulWidget {
   final String? initialEmail;
 
@@ -63,11 +65,14 @@ class _RegisterPageState extends ConsumerState<RegisterPage> {
       
       if (mounted) {
         if (success) {
-          // Registrasi sukses: arahkan ke halaman login, tidak auto-login
+          // User baru: pastikan state riwayat screening kosong dan tersinkron
+          await ref.read(global_history.screeningHistoryProvider.notifier).loadFromFirestore();
+
+          // Show success message
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                'Registrasi berhasil! Silakan login untuk mulai menggunakan aplikasi.',
+                'Registrasi berhasil! Selamat datang 🎉',
                 style: GoogleFonts.poppins(),
               ),
               backgroundColor: const Color(0xFF4CAF50),
@@ -77,12 +82,11 @@ class _RegisterPageState extends ConsumerState<RegisterPage> {
               ),
             ),
           );
-
+          
+          // Navigate to home and remove all previous routes
           Navigator.pushAndRemoveUntil(
             context,
-            MaterialPageRoute(
-              builder: (context) => const LoginPage(),
-            ),
+            MaterialPageRoute(builder: (context) => const HomePage()),
             (route) => false,
           );
         } else {

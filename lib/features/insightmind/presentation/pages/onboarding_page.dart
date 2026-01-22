@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'home_page.dart';
-//a
+
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
 

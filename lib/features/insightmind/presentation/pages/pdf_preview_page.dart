@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:insightmind_app/core/services/screening_pdf_service.dart';
-//aafsaefsef
+
 class ScreeningRecordPDF {
   final DateTime date;
   final int score;
@@ -373,7 +373,7 @@ class PdfPreviewPage extends StatelessWidget {
           ),
         ),
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
       child: Row(
         children: [
           // Kolom 1: Tanggal
@@ -446,5 +446,15 @@ class PdfPreviewPage extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  static String _formatDateTime(DateTime date) {
+    final months = [
+      'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+      'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+    ];
+    final hour = date.hour.toString().padLeft(2, '0');
+    final minute = date.minute.toString().padLeft(2, '0');
+    return '${date.day} ${months[date.month - 1]} ${date.year} $hour:$minute';
   }
 }

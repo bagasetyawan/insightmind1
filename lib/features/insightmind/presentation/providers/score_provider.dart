@@ -4,7 +4,7 @@ import '../../domain/usecases/calculate_risk_level.dart';
 
 // Simpan jawaban kuisioner di memori (sementara).
 final answersProvider = StateProvider<List<int>>((ref) => []);
-//a
+
 // Repository sederhana untuk hitung skor total.
 final scoreRepositoryProvider = Provider<ScoreRepository>((ref) {
   return ScoreRepository();

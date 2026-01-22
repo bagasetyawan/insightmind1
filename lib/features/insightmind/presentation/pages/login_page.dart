@@ -5,7 +5,7 @@ import '../../../../providers/auth_provider.dart';
 import '../../../../providers/screening_history_provider.dart' as global_history;
 import 'register_page.dart';
 import 'home_page.dart';
-//a
+
 class LoginPage extends ConsumerStatefulWidget {
   final String? initialEmail;
 
@@ -341,44 +341,8 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                   _buildSocialButton(
                     icon: Icons.g_mobiledata_rounded,
                     label: 'Lanjutkan dengan Google',
-                    onPressed: () async {
-                      final authNotifier = ref.read(authProvider.notifier);
-                      final success = await authNotifier.loginWithGoogle();
-
-                      if (!mounted) return;
-
-                      final authState = ref.read(authProvider);
-                      if (success) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              'Login Google berhasil!',
-                              style: GoogleFonts.poppins(),
-                            ),
-                            backgroundColor: const Color(0xFF4CAF50),
-                            behavior: SnackBarBehavior.floating,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                        );
-
-                        Navigator.pushAndRemoveUntil(
-                          context,
-                          MaterialPageRoute(builder: (context) => const HomePage()),
-                          (route) => false,
-                        );
-                      } else if (authState.error != null) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              authState.error!,
-                              style: GoogleFonts.poppins(),
-                            ),
-                            backgroundColor: Colors.red,
-                          ),
-                        );
-                      }
+                    onPressed: () {
+                      // TODO: Implement Google login
                     },
                   ),
                   

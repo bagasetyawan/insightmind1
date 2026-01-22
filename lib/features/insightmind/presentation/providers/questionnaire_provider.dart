@@ -29,12 +29,12 @@ class QuestionnaireNotifier extends StateNotifier<QuestionnaireState> {
   }
 }
 
-// Provider daftar pertanyaan                                                                                      (konstan)
+// Provider daftar pertanyaan (konstan)
 final questionsProvider = Provider<List<Question>>((ref) {
   return defaultQuestions;
 });
 
-// Provider state formmmm
+// Provider state form
 final questionnaireProvider =
 StateNotifierProvider<QuestionnaireNotifier, QuestionnaireState>((ref) {
   return QuestionnaireNotifier();

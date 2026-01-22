@@ -316,7 +316,7 @@ class HomeContent extends ConsumerWidget {
     );
   }
 }
-//adwadwawef
+
 class ConsultationPage extends StatelessWidget {
   const ConsultationPage({super.key});
 
@@ -326,6 +326,7 @@ class ConsultationPage extends StatelessWidget {
     final bgGradient = isDark
         ? const [Color(0xFF121212), Color(0xFF1E1E1E)]
         : const [Color(0xFFE0F7FA), Color(0xFFFDFEFF)];
+    const accent = Color(0xFF00BCD4);
 
     final doctors = [
       {

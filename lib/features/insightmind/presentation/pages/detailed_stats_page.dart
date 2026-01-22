@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'history_page.dart';
 import '../../../../providers/screening_history_provider.dart' as global_history;
-import 'home_page.dart' show DoctorListPage;
+import 'home_page.dart' show DoctorListPage, ConsultationPage;
 
 // Helper functions
 Map<String, dynamic> _calculateStats(List<ScreeningRecord> history) {
@@ -752,6 +752,7 @@ class DetailedStatsPage extends ConsumerWidget {
   }
 
   Widget _buildRecommendationsSection(BuildContext context, Map<String, dynamic> stats, bool isDark, Color primaryText, Color? secondaryText) {
+    final average = stats['average'];
     final trend = stats['trend'];
     
     final List<Map<String, dynamic>> recommendations = [];

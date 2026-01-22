@@ -4,13 +4,14 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../domain/entities/question.dart';
 import 'result_page.dart';
 import 'history_page.dart';
-//CLAS CONTAINER//
+
 class ScreeningPage extends ConsumerStatefulWidget {
   const ScreeningPage({super.key});
 
   @override
   ConsumerState<ScreeningPage> createState() => _ScreeningPageState();
 }
+
 class _ScreeningPageState extends ConsumerState<ScreeningPage> {
   final Map<String, int> answers = {};
   final PageController _pageController = PageController();
@@ -127,7 +128,7 @@ class _ScreeningPageState extends ConsumerState<ScreeningPage> {
             ),
           ),
 
-          // Questions PageView HAHAYYYY///
+          // Questions PageView
           Expanded(
             child: PageView.builder(
               controller: _pageController,
@@ -345,7 +346,7 @@ class _ScreeningPageState extends ConsumerState<ScreeningPage> {
 
                 if (_currentPage > 0) const SizedBox(width: 12),
 
-                // Next/Submit Buttonuvjguvvhghhjvjhvggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                // Next/Submit Button
                 Expanded(
                   flex: _currentPage > 0 ? 1 : 1,
                   child: ElevatedButton.icon(
@@ -359,7 +360,7 @@ class _ScreeningPageState extends ConsumerState<ScreeningPage> {
                                 // Konversi dari 0-27 (9 questions × 3 max) ke 0-100
                                 final normalizedScore = ((totalScore / 27) * 100).toInt();
                                 
-                                // Simpan ke historyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                                // Simpan ke history
                                 final history = ref.read(screeningHistoryProvider);
                                 String level;
                                 if (normalizedScore < 35) {
@@ -377,7 +378,7 @@ class _ScreeningPageState extends ConsumerState<ScreeningPage> {
                                 );
 
                                 // Simpan dengan urutan terbaru di depan,
-                                // agar konsisten dengan provider global & History.HISTORYYYY///
+                                // agar konsisten dengan provider global & History.
                                 ref.read(screeningHistoryProvider.notifier).state = [
                                   newRecord,
                                   ...history,

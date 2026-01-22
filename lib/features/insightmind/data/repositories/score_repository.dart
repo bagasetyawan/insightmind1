@@ -5,4 +5,3 @@ class ScoreRepository {
     return answers.reduce((a, b) => a + b);
   }
 }
-//a

@@ -1,7 +1,7 @@
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
-//agit config user.name "Reyhantaftaani" git config user.email "reyybang45@gmail.com"
+
 class ScreeningRecord {
   final DateTime date;
   final int score;
@@ -25,7 +25,7 @@ class ScreeningRecord {
     return 'Tingkat Stres Tinggi';
   }
 }
-//adwsefsfs
+
 class ScreeningPdfService {
   /// Generate PDF document untuk riwayat screening
   static Future<pw.Document> generateScreeningPdf(
@@ -341,5 +341,10 @@ class ScreeningPdfService {
     ];
     final days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
     return '${days[date.weekday % 7]}, ${date.day} ${months[date.month - 1]} ${date.year} • ${date.hour.toString().padLeft(2, '0')}:${date.minute.toString().padLeft(2, '0')}';
+  }
+
+  /// Format waktu sederhana
+  static String _formatTimeSimple(DateTime time) {
+    return '${time.hour.toString().padLeft(2, '0')}:${time.minute.toString().padLeft(2, '0')}:${time.second.toString().padLeft(2, '0')}';
   }
 }

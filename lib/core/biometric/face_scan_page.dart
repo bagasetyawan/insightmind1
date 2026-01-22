@@ -16,8 +16,6 @@ class _FaceScanPageState extends State<FaceScanPage> {
   late FaceDetector _faceDetector;
   bool _detecting = false;
   bool _foundFace = false;
-  bool _isInitializing = true;
-  String? _initError;
   // Hitung berapa frame berturut-turut yang berisi wajah
   int _consecutiveFaceFrames = 0;
   // Waktu mulai preview, untuk memastikan kamera tampil minimal beberapa detik
@@ -33,11 +31,6 @@ class _FaceScanPageState extends State<FaceScanPage> {
 
   Future<void> _initCamera() async {
     try {
-      setState(() {
-        _isInitializing = true;
-        _initError = null;
-      });
-
       final cameras = await availableCameras();
       final frontCamera = cameras.firstWhere(
         (c) => c.lensDirection == CameraLensDirection.front,
@@ -66,28 +59,9 @@ class _FaceScanPageState extends State<FaceScanPage> {
       if (mounted) {
         setState(() {});
       }
-    } on CameraException catch (e) {
+    } catch (_) {
       if (mounted) {
-        setState(() {
-          final code = e.code;
-          if (code == 'CameraAccessDenied' || code == 'cameraAccessDenied') {
-            _initError = 'Izin kamera ditolak. Buka pengaturan dan izinkan kamera.';
-          } else {
-            _initError = 'Kamera tidak dapat dibuka: ${e.description ?? e.code}';
-          }
-        });
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() {
-          _initError = 'Gagal menginisialisasi kamera: ${e.toString()}';
-        });
-      }
-    } finally {
-      if (mounted) {
-        setState(() {
-          _isInitializing = false;
-        });
+        Navigator.pop(context, false);
       }
     }
   }
@@ -186,43 +160,7 @@ class _FaceScanPageState extends State<FaceScanPage> {
 
   @override
   Widget build(BuildContext context) {
-    if (_initError != null) {
-      return Scaffold(
-        appBar: AppBar(
-          title: const Text('Scan Wajah'),
-          backgroundColor: const Color(0xFF00BCD4),
-        ),
-        body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(24),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Icon(Icons.error_outline, size: 48, color: Colors.red),
-                const SizedBox(height: 12),
-                Text(
-                  _initError!,
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  onPressed: _initCamera,
-                  child: const Text('Coba lagi'),
-                ),
-                TextButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  child: const Text('Tutup'),
-                ),
-              ],
-            ),
-          ),
-        ),
-      );
-    }
-
-    if (_isInitializing || _controller == null || !_controller!.value.isInitialized) {
+    if (_controller == null || !_controller!.value.isInitialized) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
       );

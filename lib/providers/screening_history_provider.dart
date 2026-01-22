@@ -2,7 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
 
-///////////Model untuk screening history//////
+// Model untuk screening history
 class ScreeningHistory {
   final DateTime date;
   final int score;
@@ -31,7 +31,7 @@ class ScreeningHistory {
   );
 }
 
-///////////State untuk menyimpan list history////////
+// State untuk menyimpan list history
 class ScreeningHistoryState {
   final List<ScreeningHistory> historyList;
 
@@ -43,10 +43,10 @@ class ScreeningHistoryState {
     );
   }
 
-  ////////////////// Get total screening count/////////
+  // Get total screening count
   int get totalScreenings => historyList.length;
 
-  ////////////////////////////// Get latest score///////////////////
+  // Get latest score
   int? get latestScore => historyList.isEmpty ? null : historyList.first.score;
 
   // Get latest screening

@@ -1,8 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart' as fb;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'screening_history_provider.dart' as history;
-//dad
+
 // Model untuk User
 class User {
   final String id;
@@ -222,9 +221,20 @@ class AuthNotifier extends StateNotifier<AuthState> {
 
         await fbUser.updateDisplayName(name);
 
-        // Jangan auto-login setelah registrasi. Paksa user login manual.
-        await fb.FirebaseAuth.instance.signOut();
-        state = AuthState(isLoggedIn: false, user: null, isLoading: false, error: null);
+        final user = User(
+          id: fbUser.uid,
+          name: name,
+          email: fbUser.email ?? email,
+          profileImage: fbUser.photoURL,
+        );
+
+        state = state.copyWith(
+          isLoggedIn: true,
+          user: user,
+          isLoading: false,
+          error: null,
+        );
+
         return true;
       } on fb.FirebaseAuthException catch (e) {
         String message = 'Terjadi kesalahan, silakan coba lagi';
@@ -242,65 +252,6 @@ class AuthNotifier extends StateNotifier<AuthState> {
         );
         return false;
       }
-    } catch (e) {
-      state = state.copyWith(
-        isLoading: false,
-        error: 'Terjadi kesalahan: ${e.toString()}',
-      );
-      return false;
-    }
-  }
-
-  // Google Sign-In
-  Future<bool> loginWithGoogle() async {
-    state = state.copyWith(isLoading: true, error: null);
-
-    try {
-      final googleUser = await GoogleSignIn().signIn();
-      if (googleUser == null) {
-        state = state.copyWith(isLoading: false, error: 'Login dibatalkan');
-        return false;
-      }
-
-      final googleAuth = await googleUser.authentication;
-      final credential = fb.GoogleAuthProvider.credential(
-        accessToken: googleAuth.accessToken,
-        idToken: googleAuth.idToken,
-      );
-
-      final userCredential = await fb.FirebaseAuth.instance.signInWithCredential(credential);
-      final fbUser = userCredential.user;
-
-      if (fbUser == null) {
-        state = state.copyWith(isLoading: false, error: 'Login Google gagal');
-        return false;
-      }
-
-      final user = User(
-        id: fbUser.uid,
-        name: fbUser.displayName ?? (fbUser.email?.split('@').first.toUpperCase() ?? ''),
-        email: fbUser.email ?? googleUser.email,
-        profileImage: fbUser.photoURL,
-      );
-
-      state = state.copyWith(
-        isLoggedIn: true,
-        user: user,
-        isLoading: false,
-        error: null,
-      );
-
-      // Muat riwayat screening setelah login
-      await ref.read(history.screeningHistoryProvider.notifier).loadFromFirestore();
-
-      return true;
-    } on fb.FirebaseAuthException catch (e) {
-      String message = 'Login Google gagal';
-      if (e.code == 'account-exists-with-different-credential') {
-        message = 'Email sudah terdaftar dengan metode lain.';
-      }
-      state = state.copyWith(isLoading: false, error: message);
-      return false;
     } catch (e) {
       state = state.copyWith(
         isLoading: false,
