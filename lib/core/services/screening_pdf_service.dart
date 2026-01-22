@@ -25,7 +25,7 @@ class ScreeningRecord {
     return 'Tingkat Stres Tinggi';
   }
 }
-//adwaw
+//adw
 class ScreeningPdfService {
   /// Generate PDF document untuk riwayat screening
   static Future<pw.Document> generateScreeningPdf(

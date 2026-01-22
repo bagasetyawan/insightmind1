@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../../providers/auth_provider.dart';
 import 'login_page.dart';
 import 'register_page.dart';
-//adwawd
+//adwa
 class ProfilePage extends ConsumerWidget {
   const ProfilePage({super.key});
 
