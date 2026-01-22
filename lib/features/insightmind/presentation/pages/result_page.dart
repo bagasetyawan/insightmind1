@@ -11,7 +11,7 @@ class ResultPage extends ConsumerStatefulWidget {
   @override
   ConsumerState<ResultPage> createState() => _ResultPageState();
 }
-//RAZIF//
+
 class _ResultPageState extends ConsumerState<ResultPage> {
   @override
   void initState() {
