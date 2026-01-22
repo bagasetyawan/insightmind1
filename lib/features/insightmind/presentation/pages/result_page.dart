@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'home_page.dart';
 import '../../../../providers/screening_history_provider.dart';
-//oke//
+//oke11//
 class ResultPage extends ConsumerStatefulWidget {
   final int score;
   const ResultPage({super.key, required this.score});
